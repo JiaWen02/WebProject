@@ -35,7 +35,7 @@
     <input type="text" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
     <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Login" class="btn btn-primary">Login</button>
   </form>
-  <a href="/insert"><p style="text-align:center;">Create New Account</p></a>
+  <a href="/register"><p style="text-align:center;">Create New Account</p></a>
   <br>
 </div>
 </body>
