@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background: linear-gradient(#f2ffcc, #ccffe6); background-attachment:fixed;">
+<br><br><br>
+<div class="container" style="background: #fff7b3; width:50%;">
+  <br>
+  <h2 class="text-center">Create New Account</h2>
+
+  @if (count($errors) > 0)
+    <div class="alert alert-danger" style="width:70%; margin:auto;">
+     <ul>
+     @foreach($errors->all() as $error)
+      <li>{{ $error }}</li>
+     @endforeach
+     </ul>
+    </div>
+   @endif
+   <br>
+  <form action = "/create" method = "post" class="form-group" style="width:70%; margin-left:15%;" action="/action_page.php">
+
+  <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>"><input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
+
+    <label style="margin-left: 42%; margin-bottom:0%;" class="form-group">Username:</label>
+    <input type="text" class="form-control" placeholder="enter username" name="name"><br>
+    <label style="margin-left: 39%; margin-bottom:0%;">Contact Number:</label>
+    <input type="text" class="form-control" placeholder="01x-xxxxxxx" name="contact"><br>
+    <label style="margin-left: 45%; margin-bottom:0%;">Email:</label>
+    <input type="text" class="form-control" placeholder="enter email" name="email"><br>
+    <label style="margin-left: 43%; margin-bottom:0%;">Password:</label>
+    <input type="text" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
+    <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Register" class="btn btn-primary">Register</button>
+  </form>
+  <a href="/login"><p style="text-align:center;">Already Have An Account</p></a>
+  <br>
+</div>
+<br><br><br>
+</body>
+</html>
