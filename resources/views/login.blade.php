@@ -8,10 +8,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <style>
+    input[type=text] {
+      padding:10px;
+      border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      border-radius:10px;
+    }
+    input[type=text]:focus {
+      background-color: #ffd969;
+      border-color: #000;
+    }
+  </style>
 </head>
-<body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed;">
+<body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
-<div class="container" style="background: #ffe6cc; width:50%;">
+<div class="container" style="background: #ffe6cc; width:50%; border-radius:50px;">
   <br>
   <h2 class="text-center">Login</h2>
 
