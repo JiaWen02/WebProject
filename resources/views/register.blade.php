@@ -29,8 +29,8 @@
   <h2 class="text-center">Create New Account <i class="material-icons">person</i></h2>
 
   @if (count($errors) > 0)
-    <div class="alert alert-danger" style="width:70%; margin:auto;">
-     <ul>
+    <div class="alert alert-danger" style="width:70%; margin:auto; background: linear-gradient(#fcd3cf, #fcaea7);">
+     <ul style="list-style-type: circle;">
      @foreach($errors->all() as $error)
       <li>{{ $error }}</li>
      @endforeach
