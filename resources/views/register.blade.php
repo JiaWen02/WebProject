@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -23,9 +24,9 @@
 </head>
 <body style="background: linear-gradient(#f2ffcc, #ccffe6); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
-<div class="container" style="background: #fff7b3; width:50%; border-radius:50px;">
+<div class="container" style="background: #fff7b3; width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
-  <h2 class="text-center">Create New Account</h2>
+  <h2 class="text-center">Create New Account <i class="material-icons">person</i></h2>
 
   @if (count($errors) > 0)
     <div class="alert alert-danger" style="width:70%; margin:auto;">
