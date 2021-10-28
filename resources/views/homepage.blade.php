@@ -40,7 +40,7 @@
 <div class="w3-content" style="max-width:1100px">
 
   <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about" id="active" style="margin-bottom:0px;">
+  <div class="w3-row w3-padding-64" id="about" style="margin-bottom:0px;">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
      <img src="{{url('/images/sunrise1.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="about me" width="600" height="750">
     </div>

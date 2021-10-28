@@ -38,7 +38,7 @@
 <div class="w3-content" style="max-width:1100px">
 
 <!-- First Photo Grid-->
-<div class="w3-row-padding w3-padding-16 w3-center" id="college" style="margin-top: 40px;">
+<div class="w3-row-padding w3-padding-16 w3-center" id="college" style="margin-top: 50px;">
     <h1 class="w3-center">Healing Sunrise</h1><br>
     <div class="w3-quarter">
       <img src="{{url('/images/sunrise2.jpg')}}" alt="hong kong" style="width:100%">
