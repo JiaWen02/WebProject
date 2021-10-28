@@ -9,8 +9,8 @@
     font-family: "Times New Roman", Georgia, Serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    letter-spacing: 5px;
     font-family: "Playfair Display";
+    letter-spacing: 5px;
   }
 </style>
 <body>
