@@ -17,8 +17,8 @@
       border-radius:10px;
     }
     input[type=text]:focus {
-      background-color: #fcde83;
       border-color: #000;
+      background-color: #fcde83;
     }
   </style>
 </head>

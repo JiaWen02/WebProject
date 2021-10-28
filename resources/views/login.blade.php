@@ -17,9 +17,9 @@
       border-radius:10px;
     }
     input[type=text]:focus {
-      background-color: #faef75;
       border-color: #000;
-    }
+      background-color: #faef75;
+      }
   </style>
 </head>
 <body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed; font-family: Georgia, serif;">
