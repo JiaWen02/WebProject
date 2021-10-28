@@ -17,7 +17,7 @@
       border-radius:10px;
     }
     input[type=text]:focus {
-      background-color: #ffd969;
+      background-color: #faef75;
       border-color: #000;
     }
   </style>
@@ -25,7 +25,7 @@
 <body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
 
-<div class="container" style="background: #ffe6cc; width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
+<div class="container" style="background: linear-gradient(#ffecd9, #fad4af); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
   <h2 class="text-center">Login <i class="material-icons">person</i></h2>
 

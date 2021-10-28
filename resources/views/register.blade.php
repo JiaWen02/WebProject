@@ -17,14 +17,14 @@
       border-radius:10px;
     }
     input[type=text]:focus {
-      background-color: #ffd969;
+      background-color: #fcde83;
       border-color: #000;
     }
   </style>
 </head>
 <body style="background: linear-gradient(#f2ffcc, #ccffe6); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
-<div class="container" style="background: #fff7b3; width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
+<div class="container" style="background: linear-gradient(#fbfcac, #f7ed81); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
   <h2 class="text-center">Create New Account <i class="material-icons">person</i></h2>
 
