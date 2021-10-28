@@ -22,7 +22,7 @@
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
-      <a href="/viewpage" class="w3-bar-item w3-button">Colleges</a>
+      <a href="/homepage#college" class="w3-bar-item w3-button">Colleges</a>
       <a href="/login" class="w3-bar-item w3-button">LogOut</a>
     </div>
   </div>
