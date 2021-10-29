@@ -13,12 +13,12 @@
     input[type=text] {
       padding:10px;
       border:0;
-      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
       border-radius:10px;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     }
     input[type=text]:focus {
-      background-color: #fcde83;
       border-color: #000;
+      background-color: #fcde83;
     }
     button{
       background-color:skyblue;

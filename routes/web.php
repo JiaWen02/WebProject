@@ -23,6 +23,10 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
+Route::get('/viewpage', function () {
+    return view('viewpage');
+});
+
 Route::get('/register', 'App\Http\Controllers\RegisterController@insertform');
 Route::post('/create', 'App\Http\Controllers\RegisterController@insert');
 Route::get('/login', 'App\Http\Controllers\LoginController@index');

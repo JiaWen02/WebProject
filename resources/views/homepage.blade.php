@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button"><b>SUNRISE</b></a>
+    <a href="#home" class="w3-bar-item w3-button active"><b>SUNRISE</b></a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#college" class="w3-bar-item w3-button">College</a>
+      <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
+      <a href="/homepage#college" class="w3-bar-item w3-button">Colleges</a>
       <a href="/login" class="w3-bar-item w3-button">LogOut</a>
     </div>
   </div>
@@ -49,9 +51,9 @@ h1, h2, h3, h4, h5, h6 {
       <p class="w3-large" style="text-align:center;">Capture the sunrise. Heading in the direction of light.<br> Chase the light and become the light.</p>
     </div>
   </div>
-  
+
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="college">
+<div class="w3-row-padding w3-padding-16 w3-center" id="college" style="margin-top: 50px;">
     <h1 class="w3-center">Healing Sunrise</h1><br>
     <div class="w3-quarter">
       <img src="{{url('/images/sunrise2.jpg')}}" alt="hong kong" style="width:100%">
