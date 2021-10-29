@@ -14,20 +14,34 @@
     input[type=text] {
       padding:10px;
       border:0;
+      width:60%;
       border-radius:10px;
       box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     }
     input[type=text]:focus {
       border-color: #000;
     }
+    input[type=password] {
+      padding:10px;
+      border:0;
+      width:60%;
+      border-radius:10px;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+    input[type=password]:focus {
+      border-color: #000;
+    }
     button{
+      padding:10px;
+      border:0;
+      border-radius:10px;
       background-color:skyblue;
     }
     button:hover{
-      background-color:blue;
+      background-color:CornflowerBlue;
+      color:white;
     }
-      background-color: #faef75;
-      }
+
   </style>
 </head>
 <body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed; font-family: Georgia, serif;">
@@ -36,14 +50,15 @@
 <div class="container" style="margin-left: 25%;background: linear-gradient(#ffecd9, #fad4af); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
   <h2 style="text-align:center;"class="text-center">Login <i class="material-icons">person</i></h2>
-
   @if (count($errors) > 0)
     <div class="alert alert-danger" style="width:70%; margin:auto; background: linear-gradient(#fcd3cf, #fcaea7);">
-     <ul style="list-style-type: circle;">
+    <br>
+    <ul style="list-style-type: circle;">
      @foreach($errors->all() as $error)
       <li>{{ $error }}</li>
      @endforeach
      </ul>
+     <br>
     </div>
    @endif
 
@@ -52,10 +67,10 @@
   <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>"><input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
 
     <label style="margin-left: 40%; margin-bottom:3%;" class="form-group">Username:</label>
-    <input style="margin-left: 30%;"type="text" class="form-control" placeholder="enter username" name="username"><br>
+    <input style="margin-left: 17%;"type="text" class="form-control" placeholder="enter username" name="username"><br>
     <br>
     <label style="margin-left: 41%; margin-bottom:3%;">Password:</label>
-    <input style="margin-left: 30%;"type="text" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
+    <input style="margin-left: 17%;"type="password" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
     <br>
     <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Login" class="btn btn-primary">Login</button>
   </form>
