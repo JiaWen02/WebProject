@@ -55,7 +55,7 @@
       <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
       <a href="/viewpage" class="w3-bar-item w3-button">Colleges</a>
       <a href="/updatepage" class="w3-bar-item w3-button">Change Password</a>
-      <a href="/delete" class="w3-bar-item w3-button">Delete Account</a>
+      <a href="/delete" onclick="return confirm('Are you sure you want to delete Account?')" class="w3-bar-item w3-button">Delete Account</a>
       <a href="/login" class="w3-bar-item w3-button">LogOut</a>
     </div>
   </div>
@@ -88,7 +88,7 @@
     <label style="margin-left: 35%; margin-bottom:3%;">Confirm Password:</label>
     <input style="margin-left: 17%;"type="password" class="form-control" name="cpassword"><br><br>
     <br>
-    <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Submit" class="btn btn-primary">Submit</button>
+    <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Submit" class="btn btn-primary"onclick="return confirm('Are you sure you want to change password?')">Submit</button>
   </form>
   <br>
 </div>
