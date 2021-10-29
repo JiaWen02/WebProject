@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,28 +14,51 @@
     input[type=text] {
       padding:10px;
       border:0;
-      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      width:60%;
       border-radius:10px;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     }
     input[type=text]:focus {
       border-color: #000;
       background-color: #fcde83;
     }
+    input[type=password] {
+      padding:10px;
+      border:0;
+      width:60%;
+      border-radius:10px;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+    input[type=password]:focus {
+      border-color: #000;
+    }
+    button{
+      padding:10px;
+      border:0;
+      border-radius:10px;
+      background-color:skyblue;
+    }
+    button:hover{
+      background-color:CornflowerBlue;
+      color:white;
+    }
   </style>
 </head>
 <body style="background: linear-gradient(#f2ffcc, #ccffe6); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
-<div class="container" style="background: linear-gradient(#fbfcac, #f7ed81); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
+<div class="container" style="margin-left: 25%;background: linear-gradient(#fbfcac, #f7ed81); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
-  <h2 class="text-center">Create New Account <i class="material-icons">person</i></h2>
+  <h2 style="text-align:center;"class="text-center">Create New Account <i class="material-icons">person</i></h2>
 
   @if (count($errors) > 0)
     <div class="alert alert-danger" style="width:70%; margin:auto; background: linear-gradient(#fcd3cf, #fcaea7);">
-     <ul style="list-style-type: circle;">
+     <br>
+    <ul style="list-style-type: circle;">
      @foreach($errors->all() as $error)
       <li>{{ $error }}</li>
      @endforeach
      </ul>
+     <br>
     </div>
    @endif
    <br>
@@ -43,13 +67,17 @@
   <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>"><input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
 
     <label style="margin-left: 42%; margin-bottom:0%;" class="form-group">Username:</label>
-    <input type="text" class="form-control" placeholder="enter username" name="name"><br>
-    <label style="margin-left: 39%; margin-bottom:0%;">Contact Number:</label>
-    <input type="text" class="form-control" placeholder="01x-xxxxxxx" name="contact"><br>
+    <input style="margin-left: 17%;"type="text" class="form-control" placeholder="enter username" name="name"><br>
+    <br>
+    <label style="margin-left: 39%;" margin-bottom:0%;">Contact Number:</label>
+    <input style="margin-left: 17%;"type="text" class="form-control" placeholder="01x-xxxxxxx" name="contact"><br>
+    <br>
     <label style="margin-left: 45%; margin-bottom:0%;">Email:</label>
-    <input type="text" class="form-control" placeholder="enter email" name="email"><br>
+    <input style="margin-left: 17%;"type="text" class="form-control" placeholder="enter email" name="email"><br>
+    <br>
     <label style="margin-left: 43%; margin-bottom:0%;">Password:</label>
-    <input type="text" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
+    <input style="margin-left: 17%;"type="password" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
+    <br>
     <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Register" class="btn btn-primary">Register</button>
   </form>
   <a href="/login"><p style="text-align:center;">Already Have An Account</p></a>
@@ -57,4 +85,5 @@
 </div>
 <br><br><br>
 </body>
+
 </html>
