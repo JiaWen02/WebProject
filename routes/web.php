@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DeleteController;
+use App\Http\Controllers\UpdateController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +34,6 @@ Route::get('/register', 'App\Http\Controllers\RegisterController@insertform');
 Route::post('/create', 'App\Http\Controllers\RegisterController@insert');
 Route::get('/login', 'App\Http\Controllers\LoginController@index');
 Route::post('/check', 'App\Http\Controllers\LoginController@checkLogin');
+Route::any('/delete', 'App\Http\Controllers\DeleteController@delete');
+Route::any('/updatepage', 'App\Http\Controllers\UpdateController@updateform');
+Route::any('/update', 'App\Http\Controllers\UpdateController@update');

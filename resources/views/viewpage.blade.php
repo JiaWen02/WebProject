@@ -29,6 +29,8 @@
     <div class="w3-right w3-hide-small">
       <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
       <a href="/viewpage" class="w3-bar-item w3-button" id="active">Colleges</a>
+      <a href="/updatepage" class="w3-bar-item w3-button">Change Password</a>
+      <a href="/delete" class="w3-bar-item w3-button">Delete Account</a>
       <a href="/login" class="w3-bar-item w3-button">LogOut</a>
     </div>
   </div>

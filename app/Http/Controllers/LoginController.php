@@ -28,6 +28,7 @@ class LoginController extends Controller
         $userpwd = DB::table('register')->where('name', $name)->value('password');
 
         if($userpwd == $password){
+            $_SESSION["username"] = $name; 
             echo '<script>alert("Welcome Back!!");
             window.location.assign("/homepage");</script>';
         }
