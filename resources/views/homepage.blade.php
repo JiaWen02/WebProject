@@ -22,7 +22,7 @@
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
-      <a href="/viewpage" class="w3-bar-item w3-button">Colleges</a>
+      <a href="/homepage#college" class="w3-bar-item w3-button">Colleges</a>
       <a href="/login" class="w3-bar-item w3-button">LogOut</a>
     </div>
   </div>
@@ -49,6 +49,47 @@
       <h1 class="w3-center">About Me</h1><hr>
       <h5 class="w3-center">Follow The Sunrise</h5>
       <p class="w3-large" style="text-align:center;">Capture the sunrise. Heading in the direction of light.<br> Chase the light and become the light.</p>
+    </div>
+  </div>
+
+  <!-- First Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center" id="college" style="margin-top: 50px;">
+    <h1 class="w3-center">Healing Sunrise</h1><br>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise2.jpg')}}" alt="hong kong" style="width:100%">
+      <h4>Hong Kong</h4>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise3.jpg')}}" alt="taiwan" style="width:100%">
+      <h4>Taiwan</h4>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise4.jpg')}}" alt="us state" style="width:100%">
+      <h4>US State</h4>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise5.jpg')}}" alt="japan" style="width:100%">
+      <h4>Japan</h4>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise6.jpg')}}" alt="redang" style="width:100%">
+      <h4>Redang Island</h4>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise7.jpg')}}" alt="seoul" style="width:100%">
+      <h4>Seoul</h4>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise8.jpg')}}" alt="new zealand" style="width:100%; height:170px;">
+      <h4>New Zealand</h4>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{url('/images/sunrise9.jpg')}}" alt="australia" style="width:100%; height:170px;">
+      <h4>Australia</h4>
     </div>
   </div>
 
