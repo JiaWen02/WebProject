@@ -20,14 +20,20 @@
       background-color: #faef75;
       border-color: #000;
     }
+    button{
+      background-color:skyblue;
+    }
+    button:hover{
+      background-color:blue;
+    }
   </style>
 </head>
 <body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
 
-<div class="container" style="background: linear-gradient(#ffecd9, #fad4af); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
+<div class="container" style="margin-left: 25%;background: linear-gradient(#ffecd9, #fad4af); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
-  <h2 class="text-center">Login <i class="material-icons">person</i></h2>
+  <h2 style="text-align:center;"class="text-center">Login <i class="material-icons">person</i></h2>
 
   @if (count($errors) > 0)
     <div class="alert alert-danger" style="width:70%; margin:auto; background: linear-gradient(#fcd3cf, #fcaea7);">
@@ -43,10 +49,12 @@
   <form action = "/check" method = "post" class="form-group" style="width:70%; margin-left:15%;" action="/action_page.php">
   <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>"><input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
 
-    <label style="margin-left: 43%; margin-bottom:0%;" class="form-group">Username:</label>
-    <input type="text" class="form-control" placeholder="enter username" name="username"><br>
-    <label style="margin-left: 44%; margin-bottom:0%;">Password:</label>
-    <input type="text" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
+    <label style="margin-left: 40%; margin-bottom:3%;" class="form-group">Username:</label>
+    <input style="margin-left: 30%;"type="text" class="form-control" placeholder="enter username" name="username"><br>
+    <br>
+    <label style="margin-left: 41%; margin-bottom:3%;">Password:</label>
+    <input style="margin-left: 30%;"type="text" class="form-control" placeholder="minimum 6 characters" name="password"><br><br>
+    <br>
     <button style="width: 30%; margin-left: 35%;" type="submit"  value = "Login" class="btn btn-primary">Login</button>
   </form>
   <a href="/register"><p style="text-align:center;">Create New Account</p></a>
