@@ -11,7 +11,8 @@ use App\Http\Controllers\Controller;
 session_start();
 class DeleteController extends Controller
 {
-    
+
+
     public function delete(Request $request){
 
         DB::delete('delete from register where name = ?',[$_SESSION["username"]]);
