@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
@@ -46,7 +47,19 @@
 </head>
 <body style="background: linear-gradient(#ffe6ee, #d4d4f7); background-attachment:fixed; font-family: Georgia, serif;">
 <br><br><br>
-
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button active"><b>SUNRISE</b></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
+      <a href="/viewpage" class="w3-bar-item w3-button">Colleges</a>
+      <a href="/updatepage" class="w3-bar-item w3-button">Change Password</a>
+      <a href="/delete" class="w3-bar-item w3-button">Delete Account</a>
+      <a href="/login" class="w3-bar-item w3-button">LogOut</a>
+    </div>
+  </div>
+</div>
 <div class="container" style="margin-left: 25%;background: linear-gradient(#ffecd9, #fad4af); width:50%; border-radius:50px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06);">
   <br>
   <h2 style="text-align:center;"class="text-center">Change Password <i class="material-icons">person</i></h2>
