@@ -29,7 +29,7 @@ class RegisterController extends Controller
         $password = $request->input('password');
 
         $data=array("name"=>$name,"contact"=>$contact,"email"=>$mail,"password"=>$password);
-        DB::table('register')->insert($data);
+        DB::table('registers')->insert($data);
         echo '<script>alert("Register Successfully!!");
               window.location.assign("/login");</script>';
         

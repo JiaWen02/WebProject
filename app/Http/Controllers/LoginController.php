@@ -25,7 +25,7 @@ class LoginController extends Controller
         $name = $request->input('username');
         $password = $request->input('password');
 
-        $userpwd = DB::table('register')->where('name', $name)->value('password');
+        $userpwd = DB::table('registers')->where('name', $name)->value('password');
 
         if($userpwd == $password){
             echo '<script>alert("Welcome Back!!");
