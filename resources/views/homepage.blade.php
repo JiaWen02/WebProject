@@ -23,6 +23,8 @@
     <div class="w3-right w3-hide-small">
       <a href="/homepage#about" class="w3-bar-item w3-button">About</a>
       <a href="/viewpage" class="w3-bar-item w3-button">Colleges</a>
+      <a href="/updatepage" class="w3-bar-item w3-button">Change Password</a>
+      <a href="/delete" onclick="return confirm('Are you sure you want to delete Account?')"class="w3-bar-item w3-button">Delete Account</a>
       <a href="/login" class="w3-bar-item w3-button">LogOut</a>
     </div>
   </div>
