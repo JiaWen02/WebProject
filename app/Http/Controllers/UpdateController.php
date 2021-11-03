@@ -29,7 +29,7 @@ class UpdateController extends Controller
             window.location.assign("/updatepage");</script>';
         }
         else{
-            DB::update('update register set password = ? where name = ?',[$password,$_SESSION["username"]]);
+            DB::update('update registers set password = ? where name = ?',[$password,$_SESSION["username"]]);
             echo '<script>alert("Change Password Successfully!!");
             window.location.assign("/homepage");</script>';
         }
